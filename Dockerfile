@@ -7,7 +7,7 @@ WORKDIR /opt/service
 
 COPY . /opt/service
 
-CMD ["celery", "worker", "-l", "info", "-A", "business.tasks", "-n", "business.%h"]
+CMD ["celery", "worker", "--loglevel=info", "--app=business.tasks", "--hostname=business.%h"]
 
 
 # EOF

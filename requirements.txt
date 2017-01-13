@@ -1,7 +1,7 @@
 # requirements.txt
 
 
-celery
+celery[redis]
 
 
 # EOF

@@ -11,7 +11,7 @@ NAME = 'business'
 VERSION = '0.0.0'
 
 REQUIRES = [
-    'celery',
+    'celery[redis]',
 ]
 
 ENTRY_POINTS = """\
